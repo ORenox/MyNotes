@@ -1,0 +1,1 @@
+lsblk -f : ver las particiones de los discos y su contenido

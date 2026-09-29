@@ -1,0 +1,4 @@
+- In this approach, you write the procedure recursively in a natural manner, but modiûed to save the result of each subproblem (usually in an array or hash table).
+- The procedure now ûrst checks to see whether it has previously solved this subproblem.
+- We say that the recursive procedure has been memoized: it <remembers= what results it has computed previously.
+- We say that the recursive procedure has been memoized: it <remembers= what results it has computed previously.

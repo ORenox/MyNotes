@@ -1,0 +1,2 @@
+-  This approach typically depends on some natural notion of the **size** of a subproblem, such that solving any particular subproblem depends only on solving **smaller** subproblems.
+- Solve the subproblems in size order, smallest ûrst, storing the solution to each subproblem when it is first solved.

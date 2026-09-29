@@ -1,0 +1,410 @@
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+# Markdown Images
+
+<!-- excalidraw-markdown-image:f9301b4438a1efaf19ab3bea01cd95969b9f3617 -->
+
+Una sucesión de instrucciones o conjunto de sentencias, como si el programador diera órdenes concretas. El [desarrollador](https://profile.es/blog/desarrollador-senior/) describe en el código paso por paso todo lo que hará su programa.
+
+
+Otros e**nfoques subordinados al paradigma de programación imperativa** son:
+
+- **Programación estructurada:** La programación estructurada es un tipo de programación imperativa donde el flujo de control se define mediante bucles anidados, condicionales y subrutinas, en lugar de a través de GOTO.
+- **Programación procedimental:** Este paradigma de programación consiste en basarse en un número muy bajo de expresiones repetidas, englobarlas todas en un procedimiento o función y llamarlo cada vez que tenga que ejecutarse.
+- **Programación modular:** consiste en dividir un programa en módulos o subprogramas con el fin de hacerlo más manejable y legible. Se trata de una evolución de la programación estructurada para resolver problemas de programación más complejos.
+
+Le dices a la computadora **cómo hacer algo, paso por paso**.
+
+```python
+x = 0
+
+x = x + 1
+x = x + 1
+x = x + 1
+```
+
+La idea fundamental es:
+
+> "Haz esto, después esto, después esto..."
+
+Aquí aparecen conceptos como **estado, variables, asignaciones, bucles y condiciones**.
+
+---
+
+<!-- /excalidraw-markdown-image:f9301b4438a1efaf19ab3bea01cd95969b9f3617 -->
+
+<!-- excalidraw-markdown-image:1845cddeefe13976563ec09b71efe48402b665bc -->
+
+Este paradigma no necesita definir algoritmos puesto que describe el problema en lugar de encontrar una solución al mismo. Este paradigma utiliza el principio del razonamiento lógico para responder a las preguntas o cuestiones consultadas.
+
+Este paradigma a su vez se divide en dos:
+
+- Programación Lógica: **Prolog**
+- Programación funcional: **Lisp, Scala, [Java](https://profile.es/blog/variables-tipos-datos-java/), [Kotlin](https://profile.es/blog/descubriendo-kotlin-lenguaje-programacion/)**
+
+<!-- /excalidraw-markdown-image:1845cddeefe13976563ec09b71efe48402b665bc -->
+
+<!-- excalidraw-markdown-image:8e389a6809b848f250b9ad9ed14cdfe73251ee63 -->
+
+En este modelo de paradigma se construyen modelos de objetos que representan elementos (objetos) del problema a resolver, que tienen características y funciones. Permite **separar los diferentes componentes de un programa**, simplificando así su creación, depuración y posteriores mejoras. La [programación orientada a objetos](https://profile.es/blog/que-es-la-programacion-orientada-a-objetos/) disminuye los errores y promociona la reutilización del código.
+
+La **programación orientada a objetos se sirve de diferentes conceptos** como:
+
+- Abstracción de datos
+- Encapsulación
+- Eventos
+- Modularidad
+- Herencia
+- Polimorfismo
+
+```python
+class Persona:
+
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def saludar(self):
+        print(f"Hola, soy {self.nombre}")
+```
+
+Puedes crear:
+
+```python
+persona = Persona("Renato")
+
+persona.saludar()
+```
+
+[[POO]]
+
+<!-- /excalidraw-markdown-image:8e389a6809b848f250b9ad9ed14cdfe73251ee63 -->
+
+<!-- excalidraw-markdown-image:4c4c42eeb4329eadd278c33d1dd828fb80d5f2af -->
+
+Este paradigma se basa en **escuchar lo que emite un evento o cambios en el flujo de datos**, en donde los objetos reaccionan a los valores que reciben de dicho cambio. Las librerías más conocidas son **Project Reactor, y RxJava. React/Angular usan RxJs** para hacer uso de la [programación reactiva](https://profile.es/blog/que-es-la-programacion-reactiva-una-introduccion/).
+
+La programación reactiva es un paradigma que se centra en la propagación automática de los cambios. Se basa en la idea de que los sistemas deberían ser capaces de reaccionar de manera automática y eficiente a los cambios en los datos o en el estado del sistema. Este enfoque es especialmente útil en aplicaciones donde la información fluye constantemente y los eventos pueden ocurrir en cualquier momento.
+
+Algunos conceptos clave en la programación reactiva incluyen:
+
+1. **Observables**: Representan secuencias de eventos o cambios en los datos. Los observables pueden emitir valores, errores o indicar que han terminado.
+2. **Observadores**: Son los componentes que están suscritos a los observables y reaccionan ante los eventos que emiten. Los observadores pueden ejecutar código en respuesta a los cambios en los flujos de datos.
+3. **Operadores**: Permiten transformar, combinar y manipular flujos de datos de manera declarativa. Estos operadores facilitan la composición y la creación de flujos más complejos a partir de flujos más simples.
+
+En vez de que el programa simplemente ejecute instrucciones en orden, tienes **eventos o cambios de datos**, y el programa **reacciona** a ellos.
+
+Por ejemplo:
+
+```js
+Usuario hace clic
+       ↓
+     evento
+       ↓
+ programa reacciona
+       ↓
+ actualiza la interfaz
+```
+
+Un ejemplo sencillo en JavaScript:
+
+```js
+button.addEventListener("click", () => {
+    console.log("El usuario hizo clic");
+});
+```
+
+Tú no estás diciendo:
+
+```js
+1. Espera
+2. Comprueba si hicieron clic
+3. Comprueba otra vez
+4. Comprueba otra vez
+5. ...
+```
+
+En cambio dices:
+
+> "Cuando ocurra un clic, ejecuta esto."
+
+<!-- /excalidraw-markdown-image:4c4c42eeb4329eadd278c33d1dd828fb80d5f2af -->
+
+Este paradigma se centra en responder a eventos que ocurren en el sistema, como clics de ratón o pulsaciones de teclas. Los programas están estructurados en torno a la definición de manejadores de eventos que se activan cuando ocurre un evento específico. JavaScript en el contexto de desarrollo web es un ejemplo común de este paradigma.
+
+<!-- excalidraw-markdown-image:e5bf4a56fefb4f4aa9333347dae2ec4ac55f6896 -->
+
+Se intenta trabajar principalmente con **funciones** y evitar modificar estados innecesariamente.
+
+```python
+numeros = [1, 2, 3, 4] doblados = list(map(lambda x: x * 2, numeros))
+```
+
+La idea es más cercana a:
+
+> "Aplica esta transformación a estos datos."
+
+En lugar de:
+
+> "Crea una variable, modifícala, vuelve a modificarla..."
+
+<!-- /excalidraw-markdown-image:e5bf4a56fefb4f4aa9333347dae2ec4ac55f6896 -->
+
+<!-- excalidraw-markdown-image:9530b80d74e7a26328ccc2b1eb56492367b45804 -->
+
+Organiza el código imperativo mediante **procedimientos o funciones**.
+
+```python
+def sumar(a, b):
+    return a + b
+
+resultado = sumar(5, 3)
+```
+
+En lugar de tener todo el programa como una secuencia enorme, lo divides en procedimientos reutilizables.
+
+<!-- /excalidraw-markdown-image:9530b80d74e7a26328ccc2b1eb56492367b45804 -->
+
+<!-- excalidraw-markdown-image:1bb05cd2654bfdbccca9fff647c98bfd2db96ba6 -->
+
+**Imperativo:**
+
+```python
+resultado = []
+
+for numero in numeros:
+    if numero > 10:
+        resultado.append(numero)
+```
+
+**Declarativo/funcional:**
+
+```python
+resultado = list(filter(lambda x: x > 10, numeros))
+```
+
+<!-- /excalidraw-markdown-image:1bb05cd2654bfdbccca9fff647c98bfd2db96ba6 -->
+
+<!-- excalidraw-markdown-image:5569eec5f83a2f43bbcf0d313242785af8228068 -->
+
+En lugar de decirle a la computadora **cómo** resolver el problema, describes **hechos y reglas**, y el sistema busca las respuestas.
+
+### 1. Hechos
+
+Puedes decirle al programa que ciertas cosas son verdaderas:
+
+```js
+padre(juan, pedro).
+padre(juan, maria).
+padre(pedro, carlos).
+```
+
+Esto significa:
+
+```js
+Juan es padre de Pedro.
+Juan es padre de María.
+Pedro es padre de Carlos.
+```
+
+Luego puedes hacer una consulta:
+
+```
+?- padre(juan, pedro).
+```
+
+Resultado:
+
+```
+true.
+```
+
+O:
+
+```
+?- padre(juan, carlos).
+```
+
+Resultado:
+
+```
+false.
+```
+
+
+
+
+<!-- /excalidraw-markdown-image:5569eec5f83a2f43bbcf0d313242785af8228068 -->
+
+# Excalidraw Data
+
+## Text Elements
+Paradigmas de la programación ^qbwTvQNM
+
+Una forma de pensar y estructurar cómo resolvemos problemas mediante código.
+paradigma no es igual a lenguaje de programación  ^t05SrAjg
+
+Programación Imperativa ^YCIkDi3r
+
+Programación Declarativa ^5wmERjWD
+
+Programación Orientada a objetos ^p9MngT4f
+
+Programación reactiva ^Hy2IfIXY
+
+Programación Funcional ^BMvs4ztW
+
+Programación Lógica ^aCU9xduZ
+
+## Embedded Files
+9dc540e0f872b76468cd463f2cfc45eef8b9ce50: [[Pasted Image 20260825092552_537.png]]
+
+f9301b4438a1efaf19ab3bea01cd95969b9f3617: markdown-image
+
+1845cddeefe13976563ec09b71efe48402b665bc: markdown-image
+
+8e389a6809b848f250b9ad9ed14cdfe73251ee63: markdown-image
+
+4c4c42eeb4329eadd278c33d1dd828fb80d5f2af: markdown-image
+
+e5bf4a56fefb4f4aa9333347dae2ec4ac55f6896: markdown-image
+
+9530b80d74e7a26328ccc2b1eb56492367b45804: markdown-image
+
+1bb05cd2654bfdbccca9fff647c98bfd2db96ba6: markdown-image
+
+5569eec5f83a2f43bbcf0d313242785af8228068: markdown-image
+
+%%
+## Drawing
+```compressed-json
+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
+```
+%%
